@@ -107,7 +107,21 @@
                             Análise e Desenvolvimento de Sistemas e pós-graduando em Desenvolvimento Full Stack.
                         </span>
                         <div class="cv">
-                            <a href="#"><button>Baixar <span class="colors">currículo</span></button></a>
+                            <a href="#">
+                                <button id="downloadButton">
+                                    Baixar <span class="colors">currículo</span>
+                                </button></a>
+                            <script>
+                                document.getElementById("downloadButton").addEventListener("click", function () {
+                                    var pdfPath = "assets/curriculo.pdf";
+                                    var link = document.createElement("a");
+                                    link.href = pdfPath;
+                                    link.download = "Curriculo_Joao_Pedro_Pereira_Lima.pdf";
+                                    document.body.appendChild(link);
+                                    link.click();
+                                    document.body.removeChild(link);
+                                });
+                            </script>
                         </div>
                     </div>
                     <div class="about-img">
