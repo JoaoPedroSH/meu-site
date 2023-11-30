@@ -654,7 +654,7 @@ body{
 }
 .skill-html{
     height: auto;
-    width: 45%;
+    width: 6%;
     padding: 0%;
     position: relative;
     font-family: poppins;
@@ -662,10 +662,14 @@ body{
     display: inline-block;
     padding:1.5%;
 }
-.skill-text{
-    width:80%;
+.skill-img{
+    width:90%;
     position: relative;
     height: 50px;
+}
+
+.img-skills {
+    max-width: 64px;
 }
 .html{
     display: inline-block;
